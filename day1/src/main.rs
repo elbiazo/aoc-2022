@@ -1,8 +1,6 @@
 fn main() {
     let part1 = include_str!("../input.txt")
         .split("\n\n")
-        .collect::<Vec<&str>>()
-        .into_iter()
         .map(|l| {
             l.lines()
                 .map(str::parse::<u32>)
@@ -15,8 +13,6 @@ fn main() {
 
     let mut part2 = include_str!("../input.txt")
         .split("\n\n")
-        .collect::<Vec<&str>>()
-        .into_iter()
         .map(|l| {
             l.lines()
                 .map(str::parse::<u32>)
